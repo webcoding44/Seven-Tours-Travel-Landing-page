@@ -1,78 +1,54 @@
-# React + TypeScript + Vite
+# Seven-Tours-Travel-Landing-page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Vantage Motors Preview](/travel.png)
 
-Currently, two official plugins are available:
+## ⚡ Built With
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,tailwind" alt="React and Tailwind CSS" height="48" align="middle" />
+  </a>
+  <a href="https://gsap.com/">
+    <img src="https://raw.githubusercontent.com/greensock/gsap-skills/main/assets/gsap-green.svg" alt="GSAP" height="48" align="middle" />
+  </a>
+</p>
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 📖 About The Project
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+**The Seven Tours** is a premium travel agency landing page designed to inspire wanderlust and convert visitors into travelers. The website combines a clean, modern UI with a deep-blue color palette, elegant typography (a mix of bold sans-serif and italic serif accents), and cinematic scroll-based animations powered by **GSAP**.
 
-## Expanding the ESLint configuration
+The project showcases popular destinations, handcrafted tour packages, travel services, a simple booking journey, customer testimonials, and an immersive photo gallery.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- 🎬 **Smooth GSAP Animations** – ScrollTrigger reveals, parallax effects, and animated transitions
+- 🌍 **Hero Section** – Eye-catching intro with a featured destination slider (Maldives, etc.)
+- 🏙️ **Top Destinations** – Interactive expanding cards (New York, Dubai, Abu Dhabi, Las Vegas, Maldives)
+- 🧳 **Featured Tours** – Horizontal scrolling handcrafted journeys with badges (Best Seller, Luxury, Romantic)
+- 📊 **Animated Stats Counter** – Happy travelers, destinations, ratings, and years of experience
+- 🛎️ **Travel Services** – Flights, hotels, car rentals, packages, visa assistance, and 24/7 support
+- 🗺️ **How It Works** – 4-step journey with an animated dashed flight path
+- 💬 **Testimonials** – Interactive review slider with customer ratings
+- 📩 **Call To Action** – Newsletter / trip planning email form
+- 🖼️ **Gallery** – Beautiful photo showcase of destinations
+- 📱 **Fully Responsive** – Optimized for mobile, tablet, and desktop
+- 💱 **Currency Selector** – USD currency switcher in the navbar
+- ⚡ **Fast Performance** – Powered by Vite
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
-```
+## 🛠️ Tech Stack
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+| Technology | Purpose |
+|------------|---------|
+| [React](https://react.dev/) | UI library |
+| [Tailwind CSS](https://tailwindcss.com/) | Utility-first styling |
+| [GSAP](https://gsap.com/) | Animations & ScrollTrigger |
+| [Vite](https://vitejs.dev/) | Build tool & dev server |
+| [Lucide React](https://lucide.dev/) | Icons |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+---
